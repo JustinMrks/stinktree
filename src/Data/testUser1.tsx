@@ -4,7 +4,7 @@ export const Justin: User = {
   userId: 'kjn4567jn359',
   userName: 'JMarksTheSpot',
   displayName: 'Justin Marks',
-  userImg: 'https://ibb.co/5TB1F0j',
+  userImg: 'https://i.ibb.co/8M6mcCx/pixil-frame-0-3.png',
   quicklinks: [
     { linkType: 'instagram', username: 'justinm_rks' },
     { linkType: 'tiktok', username: 'testname' },
