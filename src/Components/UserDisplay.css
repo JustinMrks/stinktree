@@ -1,0 +1,14 @@
+.userProfile img {
+  width: 150px;
+  box-shadow: 5px 5px 10px rgb(181, 181, 181);
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.userProfile h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.userProfile p {
+  width: 40vw;
+}

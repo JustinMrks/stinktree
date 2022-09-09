@@ -6,6 +6,7 @@ export type User = {
   userName: string;
   displayName: string;
   userImg: string;
+  bio: string;
   // password: string something something encrypted
   quicklinks: Quicklink[];
   links: Link[];

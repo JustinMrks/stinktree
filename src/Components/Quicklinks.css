@@ -1,0 +1,14 @@
+.quicklinksWrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+
+.quicklink {
+  height: 50px;
+}
+
+.quicklink:hover {
+  transform: translateY(-2px);
+}
