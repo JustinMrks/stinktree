@@ -6,8 +6,10 @@ export const Justin: User = {
   displayName: 'Justin Marks',
   userImg: 'https://i.ibb.co/8M6mcCx/pixil-frame-0-3.png',
   quicklinks: [
-    { linkType: 'instagram', username: 'justinm_rks' },
-    { linkType: 'tiktok', username: 'testname' },
+    { linkType: 'youtube', link: 'https://www.youtube.com' },
+    { linkType: 'tiktok', link: 'https://tiktok.com' },
+    { linkType: 'instagram', link: 'https://www.instagram.com' },
+    { linkType: 'email', link: 'mailto:justinmarks19@gmail.com' },
   ],
   links: [
     {
@@ -17,7 +19,7 @@ export const Justin: User = {
     },
     {
       linkName: 'My LinkedIn',
-      linkDesc: 'Hire me (please)',
+      linkDesc: 'Hire me! (not joking)',
       url: 'https://www.linkedin.com/in/justin-marks-dev/',
     },
   ],
