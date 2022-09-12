@@ -1,4 +1,4 @@
-#Linking application with authentication
+# Linking application with authentication
 
 npm start to begin use
 # Stinktree BuildLog
