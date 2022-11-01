@@ -2,12 +2,12 @@ import { Link } from './Link.model';
 import { Quicklink } from './Quicklink.model';
 
 export type User = {
-  userId: string;
+  id: number;
   userName: string;
   displayName: string;
   userImg: string;
   bio: string;
   // password: string something something encrypted
-  quicklinks: Quicklink[];
+  quickLinks: Quicklink[];
   links: Link[];
 };

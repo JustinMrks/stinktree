@@ -8,24 +8,29 @@ type QuicklinksState = {
 
 const Quicklinks = ({ quicklinks }: QuicklinksState) => {
   const getImage = (
-    site: 'instagram' | 'twitter' | 'facebook' | 'youtube' | 'tiktok' | 'email'
+    site:
+      | 'instagram'
+      | 'twitter'
+      | 'facebook'
+      | 'youtube'
+      | 'tiktok'
+      | 'email'
+      | 'linkedin'
   ) => {
     const image = require(`../Icons/${site}.png`);
     return <img src={image} alt="" className="quicklink" />;
   };
 
   return (
-    <ul className="quicklinksWrapper">
+    <div className="quicklinksWrapper">
       {quicklinks.map((quicklink, index) => {
         return (
-          <li key={index}>
-            <a href={quicklink.link} target="_blank" rel="noreferrer">
-              {getImage(quicklink.linkType)}
-            </a>
-          </li>
+          <a href={quicklink.url} target="_blank" rel="noreferrer" key={index}>
+            {getImage(quicklink.linkType)}
+          </a>
         );
       })}
-    </ul>
+    </div>
   );
 };
 

@@ -1,8 +1,9 @@
 .quicklinksWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 50%;
   list-style: none;
+  /* border: 2px solid green; */
 }
 
 .quicklink {

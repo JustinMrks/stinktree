@@ -2,7 +2,13 @@ import React from 'react';
 import './Links.css';
 
 type LinksState = {
-  links: { linkName: string; linkDesc: string; url: string }[];
+  links: {
+    id: number;
+    name: string;
+    description: string;
+    url: string;
+    userId: number;
+  }[];
 };
 
 const Links = ({ links }: LinksState) => {
@@ -16,8 +22,8 @@ const Links = ({ links }: LinksState) => {
             rel="noreferrer"
             className="linkWrapper"
           >
-            <h2>{link.linkName}</h2>
-            <h3>{link.linkDesc}</h3>
+            <h2>{link.name}</h2>
+            <h3>{link.description}</h3>
           </a>
         );
       })}
