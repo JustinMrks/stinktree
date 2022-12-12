@@ -1,14 +1,30 @@
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userProfile > * {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
 .userProfile img {
-  width: 150px;
   box-shadow: 5px 5px 10px rgb(181, 181, 181);
+  width: 30%;
+  max-width: 400px;
   border-radius: 50%;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.userProfile h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.userProfile #displayName {
+  font-size: 3.2rem;
 }
 
-.userProfile p {
-  width: 40vw;
+.userProfile #userName {
+  font-size: 1.6rem;
+}
+
+.userProfile #bio {
+  margin-bottom: 1rem;
 }

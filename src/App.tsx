@@ -1,19 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import UserCard from './Components/UserCard';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <header>Header</header> {/* soon to be menu bar */}
       <Routes>
         <Route path="/user/:username" element={<UserCard />} />
       </Routes>
       <footer>Footer</footer>
       {/* for holding contact info and icon contributors */}
-    </>
+    </div>
   );
 }
 

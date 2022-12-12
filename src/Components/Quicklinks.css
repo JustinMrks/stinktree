@@ -1,13 +1,18 @@
 .quicklinksWrapper {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
   list-style: none;
-  /* border: 2px solid green; */
+}
+
+.quicklinksWrapper > a {
+  margin-right: 2rem;
+}
+.quicklinksWrapper > a:nth-child(1) {
+  margin-left: 2rem;
 }
 
 .quicklink {
-  height: 50px;
+  height: 4rem;
 }
 
 .quicklink:hover {

@@ -17,6 +17,7 @@ const Links = ({ links }: LinksState) => {
       {links.map((link) => {
         return (
           <a
+            key={link.id}
             href={link.url}
             target="_blank"
             rel="noreferrer"

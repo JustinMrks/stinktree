@@ -12,7 +12,7 @@ const UserDisplay = ({ user }: UserDispState) => {
       <img src={user.userImg} alt="pfp" />
       <h1 id="displayName">{user.displayName}</h1>
       <h3 id="userName">@{user.userName}</h3>
-      <p>{user.bio}</p>
+      <p id="bio">{user.bio}</p>
     </div>
   );
 };

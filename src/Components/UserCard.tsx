@@ -13,7 +13,7 @@ const UserCard = () => {
 
   const loadUser = (userName: string): void => {
     axios
-      .get(`http://localhost:4024/users/${userName}`)
+      .get(`http://localhost:3000/users/${userName}`)
       .then((res) => {
         console.log(res.data);
         setUser(res.data);
@@ -25,7 +25,7 @@ const UserCard = () => {
 
   useEffect(() => {
     loadUser(username!);
-  }, []);
+  }, [username]);
 
   return !user ? (
     <div className="error">no user found</div>

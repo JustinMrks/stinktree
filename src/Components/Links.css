@@ -1,24 +1,30 @@
 .linksWrapper {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
 }
 
 .linkWrapper {
   background: white;
-  /* outline: 1px solid black; */
-  width: 50%;
   text-decoration: none;
+  padding: 0.5rem;
   color: black;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 5px rgb(172, 172, 172);
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgb(197, 197, 197);
+  width: 90%;
 }
 
 .linkWrapper:hover {
-  box-shadow: inset 2px 2px 10px rgb(172, 172, 172);
+  box-shadow: inset 2px 2px 10px rgb(207, 207, 207);
   transform: translateY(2px);
-  transition: 50ms;
+  transition: 100ms;
+}
+
+.linkWrapper > h2 {
+  font-size: 1.8rem;
+}
+
+.linkWrapper > h3 {
+  font-size: 1.6rem;
 }
