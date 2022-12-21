@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: Right;
+  width: 100%;
+}
+
+.nav-opener {
+  height: 4rem;
+  width: 4rem;
+  font-size: 3rem;
+  margin: 0.5rem;
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  position: absolute;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 10%;
+}
+
+.aria {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: gray;
+  min-height: 100%;
+  width: 60%;
+  max-width: 400px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding-top: 5rem;
+}
+
+.aria > * {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ababab;
+  z-index: 1;
+}
+.aria > *:nth-child(1) {
+  border-top: 1px solid #ababab;
+}
+
+button {
+  color: white;
+  border: none;
+}
+.justin {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
