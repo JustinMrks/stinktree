@@ -36,8 +36,8 @@ const UserCard = ({ editing }: UserCardState) => {
   ) : (
     <>
       <UserDisplay user={user} editing={editing} />
-      <Quicklinks quicklinks={user.quickLinks} editing={editing} />
-      <Links links={user.links} editing={editing} />
+      <Quicklinks quicklinks={user.quickLinks} />
+      <Links links={user.links} />
     </>
   );
 };

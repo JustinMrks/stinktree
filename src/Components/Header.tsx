@@ -53,7 +53,9 @@ const Header = ({
               Mike
             </Link>
 
-            <button onClick={() => swapBoth()}>Edit Mode</button>
+            <button className="justin" onClick={() => swapBoth()}>
+              Edit Mode
+            </button>
           </div>
         ) : (
           <></>

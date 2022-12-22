@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { User } from '../Models/User.model';
 import './UserDisplay.css';
 
@@ -15,9 +16,9 @@ const UserDisplay = ({ user, editing }: UserDispState) => {
       <h3 id="userName">@{user.userName}</h3>
       <p id="bio">{user.bio}</p>
       {editing ? (
-        <div>
-          <button className="bio-edit">Edit Your Profile</button>
-        </div>
+        <Link className="edit-button" to={`/user/${user.userName}/edit`}>
+          Edit Your Profile
+        </Link>
       ) : (
         <></>
       )}

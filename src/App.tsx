@@ -4,6 +4,7 @@ import Header from './Components/Header';
 
 import './App.css';
 import UserCard from './Components/UserCard';
+import UserEdit from './Components/UserEdit';
 
 function App() {
   const [editing, setEditing] = useState(false);
@@ -22,8 +23,9 @@ function App() {
           path="/user/:username"
           element={<UserCard editing={editing} />}
         />
+        <Route path="/user/:username/edit" element={<UserEdit />} />
       </Routes>
-      <footer>Footer</footer>
+      <footer>Copyright 2022 by Justin Marks. All Rights Reserved.</footer>
     </div>
   );
 }

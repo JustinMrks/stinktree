@@ -2,7 +2,6 @@ import React from 'react';
 import './Links.css';
 
 type LinksState = {
-  editing: boolean;
   links: {
     id: number;
     name: string;
@@ -12,7 +11,7 @@ type LinksState = {
   }[];
 };
 
-const Links = ({ links, editing }: LinksState) => {
+const Links = ({ links }: LinksState) => {
   return (
     <div className="linksWrapper">
       {links.map((link) => {
