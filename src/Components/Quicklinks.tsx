@@ -4,9 +4,10 @@ import './Quicklinks.css';
 
 type QuicklinksState = {
   quicklinks: Quicklink[];
+  editing: boolean;
 };
 
-const Quicklinks = ({ quicklinks }: QuicklinksState) => {
+const Quicklinks = ({ quicklinks, editing }: QuicklinksState) => {
   const getImage = (
     site:
       | 'instagram'

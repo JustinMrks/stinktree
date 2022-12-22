@@ -18,7 +18,10 @@ function App() {
         setBurgerMenu={setBurgerMenu}
       />
       <Routes>
-        <Route path="/user/:username" element={<UserCard />} />
+        <Route
+          path="/user/:username"
+          element={<UserCard editing={editing} />}
+        />
       </Routes>
       <footer>Footer</footer>
     </div>

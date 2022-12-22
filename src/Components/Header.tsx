@@ -15,6 +15,11 @@ const Header = ({
   burgerMenu,
   setBurgerMenu,
 }: HeaderState) => {
+  const swapBoth = () => {
+    setBurgerMenu(!burgerMenu);
+    setEditing(!editing);
+  };
+
   return (
     <div className="header">
       <nav>
@@ -48,7 +53,7 @@ const Header = ({
               Mike
             </Link>
 
-            <button onClick={() => setEditing(!editing)}>Edit Mode</button>
+            <button onClick={() => swapBoth()}>Edit Mode</button>
           </div>
         ) : (
           <></>
