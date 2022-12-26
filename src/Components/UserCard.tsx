@@ -8,10 +8,10 @@ import UserDisplay from '../Components/UserDisplay';
 import Links from '../Components/Links';
 
 type UserCardState = {
-  editing: boolean;
+  editMode: boolean;
 };
 
-const UserCard = ({ editing }: UserCardState) => {
+const UserCard = ({ editMode }: UserCardState) => {
   const [user, setUser] = useState<User>();
   const { username } = useParams();
 
@@ -35,7 +35,7 @@ const UserCard = ({ editing }: UserCardState) => {
     <div className="error">no user found</div>
   ) : (
     <>
-      <UserDisplay user={user} editing={editing} />
+      <UserDisplay user={user} editMode={editMode} />
       <Quicklinks quicklinks={user.quickLinks} />
       <Links links={user.links} />
     </>

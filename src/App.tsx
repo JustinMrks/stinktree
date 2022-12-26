@@ -4,24 +4,24 @@ import Header from './Components/Header';
 
 import './App.css';
 import UserCard from './Components/UserCard';
-import UserEdit from './Components/UserEdit';
+import UserEdit from './Components/Editing/UserEdit';
 
 function App() {
-  const [editing, setEditing] = useState(false);
+  const [editMode, setEditMode] = useState(false);
   const [burgerMenu, setBurgerMenu] = useState(false);
 
   return (
     <div className="App">
       <Header
-        editing={editing}
-        setEditing={setEditing}
+        editMode={editMode}
+        setEditMode={setEditMode}
         burgerMenu={burgerMenu}
         setBurgerMenu={setBurgerMenu}
       />
       <Routes>
         <Route
           path="/user/:username"
-          element={<UserCard editing={editing} />}
+          element={<UserCard editMode={editMode} />}
         />
         <Route path="/user/:username/edit" element={<UserEdit />} />
       </Routes>

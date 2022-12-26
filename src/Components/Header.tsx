@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 type HeaderState = {
-  editing: boolean;
-  setEditing: React.Dispatch<React.SetStateAction<boolean>>;
+  editMode: boolean;
+  setEditMode: React.Dispatch<React.SetStateAction<boolean>>;
   burgerMenu: boolean;
   setBurgerMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const Header = ({
-  editing,
-  setEditing,
+  editMode,
+  setEditMode,
   burgerMenu,
   setBurgerMenu,
 }: HeaderState) => {
   const swapBoth = () => {
     setBurgerMenu(!burgerMenu);
-    setEditing(!editing);
+    setEditMode(!editMode);
   };
 
   return (
