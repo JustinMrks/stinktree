@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from './Link';
 import './Links.css';
 
 type LinksState = {
@@ -9,24 +10,14 @@ type LinksState = {
     url: string;
     userId: number;
   }[];
+  editing: boolean;
 };
 
-const Links = ({ links }: LinksState) => {
+const Links = ({ links, editing }: LinksState) => {
   return (
     <div className="linksWrapper">
-      {links.map((link) => {
-        return (
-          <a
-            key={link.id}
-            href={link.url}
-            target="_blank"
-            rel="noreferrer"
-            className="linkWrapper"
-          >
-            <h2>{link.name}</h2>
-            <h3>{link.description}</h3>
-          </a>
-        );
+      {links.map((link, index) => {
+        return <Link link={link} key={index} editing={editing} />;
       })}
     </div>
   );

@@ -6,9 +6,16 @@ import './UserDisplay.css';
 type UserDispState = {
   user: User;
   editMode: boolean;
+  editing: boolean;
+  setEditing: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const UserDisplay = ({ user, editMode }: UserDispState) => {
+const UserDisplay = ({
+  user,
+  editMode,
+  setEditing,
+  editing,
+}: UserDispState) => {
   return (
     <div className="userProfile">
       <img src={user.userImg} alt="pfp" />
@@ -16,9 +23,9 @@ const UserDisplay = ({ user, editMode }: UserDispState) => {
       <h3 id="userName">@{user.userName}</h3>
       <p id="bio">{user.bio}</p>
       {editMode ? (
-        <Link className="edit-button" to={`/user/${user.userName}/edit`}>
+        <button className="edit-button" onClick={() => setEditing(!editing)}>
           Edit Your Profile
-        </Link>
+        </button>
       ) : (
         <></>
       )}
