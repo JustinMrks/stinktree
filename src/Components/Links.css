@@ -37,3 +37,56 @@
     padding-left: 2rem;
   }
 }
+
+.editButton {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lilButton {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save {
+  background-color: rgb(39, 105, 68);
+}
+
+.delete {
+  background-color: rgb(175, 63, 63);
+}
+
+form > div {
+  display: flex;
+  padding: 0.2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+.editWrapper {
+  width: 90%;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input {
+  min-width: 75%;
+}
+
+form > div > label {
+  padding-right: 2rem;
+}
+
+.buttons {
+  justify-content: center;
+}

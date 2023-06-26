@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { User } from '../Models/User.model';
 import './UserDisplay.css';
 
