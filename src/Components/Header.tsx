@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Header.css';
@@ -6,20 +6,15 @@ import './Header.css';
 type HeaderState = {
   editMode: boolean;
   setEditMode: React.Dispatch<React.SetStateAction<boolean>>;
-  burgerMenu: boolean;
-  setBurgerMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Header = ({
-  editMode,
-  setEditMode,
-  burgerMenu,
-  setBurgerMenu,
-}: HeaderState) => {
+const Header = ({ editMode, setEditMode }: HeaderState) => {
   const swapBoth = () => {
     setBurgerMenu(!burgerMenu);
     setEditMode(!editMode);
   };
+
+  const [burgerMenu, setBurgerMenu] = useState(false);
 
   return (
     <div className="header">
